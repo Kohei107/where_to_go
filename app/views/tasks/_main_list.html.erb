@@ -1,19 +1,35 @@
-<div class="task-header">
+<div class="list-header">
 <div class="left-header">
-    <div class="header-title">
+    <div class="list-title">
       list1
     </div>
   </div>
   <div class="right-header">
-    <div class="header-button">
+    <div class="list-delete">
       <a href="#">リストを削除する</a>
     </div>
   </div>
 </div>
 
 <div class="tasks">
-<div class="task">
+  <div class="task">
+    <div class= "main-task">
       <div class="task-content">
+       <%= check_box_tag :task1 %>
+       <%= label_tag :task1, "アメリカ合衆国" %>
+       
       </div>
+    </div>
+  </div>
+
+<div class="tasks">
+  <div class="task">
+    <div class= "main-task">
+      <div class="task-content">
+       <%= check_box_tag :task2 %>
+       <%= label_tag :task2, "イタリア共和国" %>
+      </div>
+    </div>
+  </div>
 </div>
 

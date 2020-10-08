@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
 }
-.side-bar {
+.side-bar{
   background-color: #253141;
   width: 300px;
   height: 100vh;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.header-name a{
+.user-name a{
   font-size: 16px;
   color: #FAFAFA;
   text-decoration: none;
@@ -40,18 +40,8 @@
   overflow: scroll;
 }
 
-.switch {
+.list {
   padding: 20px 0 40px;
-}
-
-.task {
-  margin: 10px 0;
-}
-
-.task-content {
-  color: #434a54;
-  font-size: 20px;
-  margin-bottom: 40px;
 }
 
 .list-name a {
@@ -59,41 +49,53 @@
   color: white;
 }
 
-.list {
+.main-list {
   background-color: #ffffff;
   width: calc(100% - 300px);
 }
 
-.tasks {
-  background-color: #FAFAFA;
-  height: calc(100vh - 100px - 90px);
-  padding: 46px 40px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.task-header {
+.list-header{
   height: 100px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.header-title {
-  color: #333;
+.list-title{
   font-size: 24px;
+  color: #333;
   margin-top: 36px;
-  background-color: #FAFAFA;
 }
 
-.header-button {
+.list-delete{
   margin-top: 40px;
 }
 
-.header-button a {
-  text-decoration: none;
-  border: 1px solid darkred;
+.list-delete a{
   color: darkred;
+  border: 1px solid darkred;
   padding: 20px;
+  text-decoration: none;
 }
+
+.tasks {
+  background-color: #FAFAFA;
+  height: calc(100vh - 190px);
+  overflow: scroll;
+}
+.task{
+  margin: 10px 0;
+}
+
+.main-task{
+  margin-top: 10px;
+}
+
+.task-content{
+  font-size: 18px;
+  color: #434a54;
+  margin: 0 0 10px 20px;
+}
+
+
 
