@@ -1,21 +1,24 @@
-<div class="side-bar-header">
-  <div class="user-name">
-    <a href="#">Tom</a>
-  </div>
-  <div class="create-list">
-    <a href="#">リストを作成する</a>
-  </div>
-</div>
-
 <div class="lists">
   <div class="list">
     <div class="list-name">
       <a href="#">list1</a>
     </div>
+    <div class delete-btn>
+      <a href="#">削除</a>
+    </div>
+
   </div>
   <div class="list">
     <div class="list-name">
       <a href="#">list2</a>
     </div>
+    <div class delete-btn>
+      <a href="#">削除</a>
+    </div>
   </div>
+  <div class="create-list">
+   <ul class="create-list-btn">
+   <li><%= link_to "リスト作成", new_list_path, method: :get, class: "create-list"%></li>
+   </ul>
+   </div>
 </div>

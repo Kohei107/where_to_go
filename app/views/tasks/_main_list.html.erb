@@ -1,35 +1,32 @@
-<div class="list-header">
-<div class="left-header">
-    <div class="list-title">
-      list1
-    </div>
-  </div>
-  <div class="right-header">
-    <div class="list-delete">
-      <a href="#">リストを削除する</a>
-    </div>
-  </div>
-</div>
 
-<div class="tasks">
-  <div class="task">
-    <div class= "main-task">
+ <div class="tasks">
+    <div class="task">
       <div class="task-content">
-       <%= check_box_tag :task1 %>
-       <%= label_tag :task1, "アメリカ合衆国" %>
-       
+         <%= check_box_tag :task1 %>
+         <%= label_tag :task1, "アメリカ合衆国" %>
+      </div>
+      <div class delete-btn>
+         <a href="#">削除</a>
       </div>
     </div>
-  </div>
+  
 
-<div class="tasks">
-  <div class="task">
-    <div class= "main-task">
+    <div class="task">
       <div class="task-content">
-       <%= check_box_tag :task2 %>
-       <%= label_tag :task2, "イタリア共和国" %>
+         <%= check_box_tag :task2 %>
+         <%= label_tag :task2, "イタリア共和国" %>
+      </div>
+      <div class delete-btn>
+         <a href="#">削除</a>
       </div>
     </div>
-  </div>
-</div>
+ </div>
 
+
+
+  <div class="form">
+    <div class="form-input">
+      <input class="form-task" placeholder= "目的地を入力しよう！">
+    </div>
+   <input class="form-submit" type="submit" value="追加">
+  </div>
