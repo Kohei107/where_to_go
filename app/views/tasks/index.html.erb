@@ -1,2 +1,21 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<header class='top-page-header'>
+  <div class='nav'>
+    <ul class='list_left'>
+        <li> <%= image_tag("img_bluelogo.png", class:"blue-logo")%></li>
+    </ul>
+    
+    <ul class='lists-right'>
+        <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrapper">
+  <div class="side-bar">
+    <%= render "side_bar" %>
+  </div>
+  <div class="main-list">
+    <%= render "main_list" %>
+  </div>
+</div>

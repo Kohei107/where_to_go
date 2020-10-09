@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-container{
+  height: 100vh;
+  background-image: url("../img_topbg.JPG");
+  background-size: cover;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.title {
+  width: 420px;
+  height:150px;
+}
+
+.main {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.word{
+  width: 1000px;
+;
+}
+.footer{
+  height: 100px;
+}
+
+.login_btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.sign-up {
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 3vw;
+  padding: 0.5em 1em;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  color: #FFF;
+}
+
+.login {
+  font-size: 30px;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  color: #FFF;
+}
+

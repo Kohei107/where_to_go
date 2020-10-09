@@ -1,0 +1,111 @@
+.wrapper {
+  display: flex;
+}
+
+.side-bar{
+  background-color: #253141;
+  width: 200px;
+  height: (100vh - 95.38px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.list {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-name a {
+  text-decoration: none;
+  color: black;
+  margin: 0; 
+  padding: 0;
+}
+
+.create-list {
+  display: flex;
+  justify-content: center;
+}
+
+.create-list-btn{
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  color: #FFF;
+}
+
+.main-list {
+  background-color: #ffffff;
+  width: calc(100% - 200px);
+}
+
+.tasks {
+  background-color: #ffffff;
+  height: calc(100vh - 185.38px);
+  overflow: scroll;
+  padding-right: 50px;
+}
+
+.task{
+  margin: 10px 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.task-content{
+  font-size: 18px;
+  color: #434a54;
+  margin: 0 0 10px 20px;
+}
+
+.form {
+  background-color: #253141;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-input {
+  background-color: white;
+  width: 60%;
+}
+
+.form-task {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-submit:hover {
+  background-color: rgb(2, 2, 44);
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
