@@ -1,7 +1,7 @@
 <div class="background">
  <div class='task-list-form'>
   <h1>新規リスト</h1>
-  <%=form_with model: @list, local: true do |f|%>
+  <%=form_with model: @list, url: lists_path, method: :post, local: true do |f|%>
     <div class='task-list-form__field'>
       <div class='task-list-form__field--left'>
         <%= f.label :リスト名, class: 'task-list-form__label'%>
