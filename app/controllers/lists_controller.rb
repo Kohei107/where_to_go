@@ -1,18 +1,23 @@
 class ListsController < ApplicationController
-
   def new
     @list = List.new
   end
 
   def create
-    
     @list = List.new(list_params)
-    if @list.save!
-      redirect_to tasks_path
+    if @list.save
+      redirect_to list_tasks_path(:list_id)
     else
       render :new
     end
   end
+
+  def destroy
+    list = List.find(params[:id])
+    list.destroy
+    redirect_to list_tasks_path(:list_id)
+  end
+  
 
   private
 

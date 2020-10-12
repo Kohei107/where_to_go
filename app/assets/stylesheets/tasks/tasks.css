@@ -4,8 +4,8 @@
 
 .side-bar{
   background-color: #253141;
-  width: 200px;
-  height: (100vh - 95.38px);
+  width: 300px;
+  height: calc(100vh - 90px);
   padding: 0 20px;
   overflow: scroll;
 }
@@ -31,16 +31,18 @@
 .create-list {
   display: flex;
   justify-content: center;
+  
 }
 
 .create-list-btn{
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   padding: 0.5em 1em;
   background: -moz-linear-gradient(#ffb03c, #ff708d);
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
   color: #FFF;
+  margin: 20px 0 10px;
 }
 
 .main-list {
@@ -50,7 +52,7 @@
 
 .tasks {
   background-color: #ffffff;
-  height: calc(100vh - 185.38px);
+  height: calc(100vh - 180px);
   overflow: scroll;
   padding-right: 50px;
 }
