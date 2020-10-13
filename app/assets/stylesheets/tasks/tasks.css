@@ -72,6 +72,7 @@
   margin: 0 0 10px 20px;
 }
 
+
 .form {
   background-color: #253141;
   height: 90px;
@@ -110,4 +111,8 @@
   height: 50px;
   margin-left: 15px;
   padding: 0 20px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
 }
