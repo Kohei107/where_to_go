@@ -1,21 +1,16 @@
 <div class="lists">
+<% current_user.lists.each do |list| %>
   <div class="list">
-    <div class="list-name">
-      <a href="#">list1</a>
+    <div class="list-name" id="list-name">
+      <%= link_to list.name, list_tasks_path(list)  %>
     </div>
     <div class delete-btn>
-      <a href="#">削除</a>
+      <%= link_to "削除", list_path(list), method: :delete%>
     </div>
   </div>
+<% end%>
   
-  <div class="list">
-    <div class="list-name">
-      <a href="#">list2</a>
-    </div>
-    <div class delete-btn>
-      <a href="#">削除</a>
-    </div>
-  </div>
+
   <div class="create-list">
    <ul class="create-list-btn">
    <li><%= link_to "リスト作成", new_list_path, method: :get, class: "create-list"%></li>

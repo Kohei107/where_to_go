@@ -1,32 +1,12 @@
-
- <div class="tasks">
-    <div class="task">
-      <div class="task-content">
-         <%= check_box_tag :task1 %>
-         <%= label_tag :task1, "アメリカ合衆国" %>
-      </div>
-      <div class delete-btn>
-         <a href="#">削除</a>
-      </div>
-    </div>
-  
-
-    <div class="task">
-      <div class="task-content">
-         <%= check_box_tag :task2 %>
-         <%= label_tag :task2, "イタリア共和国" %>
-      </div>
-      <div class delete-btn>
-         <a href="#">削除</a>
-      </div>
-    </div>
- </div>
+<div class="tasks">
+     <%= render partial: 'task', collection: @tasks %>
+</div>
 
 
-
-  <div class="form">
+<%= form_with model: [@list, @task], class: "form", local: true do |f| %>
     <div class="form-input">
-      <input class="form-task" placeholder= "目的地を入力しよう！">
+      <%= f.text_field :content, class: "form-task", placeholder: '目的地を入力してください' %>
     </div>
-   <input class="form-submit" type="submit" value="追加">
-  </div>
+     <%= f.submit '追加', class: "form-submit" %>
+<% end %> 
+
