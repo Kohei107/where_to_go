@@ -5,6 +5,6 @@
       <%= task.content %>
     </div>
       <div class delete-btn>
-        <a href="#">削除</a>
+        <%= link_to "削除", list_task_path(@list.id, task.id), method: :delete %>
       </div>
   </div>
