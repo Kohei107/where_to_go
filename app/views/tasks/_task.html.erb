@@ -1,9 +1,17 @@
   <div class="task">
     <div class="task-content">
-    <%= check_box_tag :task1 %>
+    <%= check_box_tag :done %>
     <!-- 投稿したメッセージ内容を記述する -->
       <%= task.content %>
     </div>
+  <div class="map">
+    <iframe 
+        width="500"
+        height="100"
+        frameborder="0" style="border:0"
+        src=<%=url_for("https://www.google.com/maps/embed/v1/place?key=AIzaSyAPg4reLN0KHo2VmTyrMs5v75h6UNk6RK4&q=#{task.content}&zoom=15")%>>
+    </iframe>
+  </div>
       <div class delete-btn>
         <%= link_to "削除", list_task_path(@list.id, task.id), method: :delete %>
       </div>
