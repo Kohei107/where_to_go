@@ -58,3 +58,5 @@ gem 'devise'
 gem 'pry-rails'
 
 gem 'jquery-rails'
+
+gem 'gon'

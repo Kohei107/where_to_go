@@ -9,7 +9,9 @@ class TasksController < ApplicationController
   def create
     @list = List.find(params[:list_id])
     @task = @list.tasks.new(task_params)
+    #gon.list = @list
     if @task.save
+      #render json:{ post: @task }
       redirect_to list_tasks_path(@list)
     else
       @tasks = @list.tasks
