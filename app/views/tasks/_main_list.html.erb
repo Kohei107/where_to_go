@@ -5,7 +5,7 @@
 
 <%= form_with model: [@list, @task], class: "form", local: true do |f| %>
     <div class="form-input">
-      <%= f.text_field :content, class: "form-task", placeholder: '目的地を入力してください' %>
+      <%= f.text_field :content, class: "form-task", placeholder: '目的地を入力してください(地図がうまく表示されない場合は、地名なども入力してください)' %>
     </div>
      <%= f.submit '追加', class: "form-submit" %>
 <% end %> 

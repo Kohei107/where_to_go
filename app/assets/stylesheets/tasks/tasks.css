@@ -62,7 +62,7 @@
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
 }
 
 
@@ -70,6 +70,7 @@
   font-size: 18px;
   color: #434a54;
   margin: 0 0 10px 20px;
+  width: 40vh;
 }
 
 
@@ -83,7 +84,7 @@
 
 .form-input {
   background-color: white;
-  width: 60%;
+  width: 70%;
 }
 
 .form-task {

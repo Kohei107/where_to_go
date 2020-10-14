@@ -3,6 +3,7 @@ class TasksController < ApplicationController
     @task = Task.new
     @list = List.find(params[:list_id])
     @tasks = @list.tasks
+    
   end
 
   def create
