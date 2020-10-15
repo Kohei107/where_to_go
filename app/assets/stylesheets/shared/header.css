@@ -48,6 +48,28 @@
   color: #FFF;
 }
 
+.list_center{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-title {
+  padding: 1em 2em;
+  margin: 2em 0;
+  color: #FFF;
+  background: #145392;
+  border-bottom: solid 6px #3777b6;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  font: 20px
+  ;
+}
+.list-title {
+  margin: 0; 
+  padding: 0;
+}
 
 .logout {
   font-size: 20px;

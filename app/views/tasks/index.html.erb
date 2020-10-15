@@ -1,4 +1,23 @@
-<%= render "shared/header"%>
+<header class='top-page-header'>
+  <div class='nav'>
+    <ul class='list_left'>
+        <li> <%= image_tag("img_bluelogo.png", class:"blue-logo")%></li>
+    </ul>
+
+    <ul class='list_center'>
+       <% if @list.name.empty? %>
+         <li class="list-title">リストを選択してください</li>
+         <% else %>
+         <li class="list-title">選択中のリスト:　<%= @list.name %></li>
+       <% end %>
+    </ul>
+    
+    <ul class='lists-right'>
+        <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+    </ul>
+  </div>
+</header>
 
 <div class="wrapper">
   <div class="side-bar">
