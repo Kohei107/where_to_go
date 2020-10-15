@@ -1,7 +1,9 @@
-<div class="lists">
+
+
+<div class="lists" >
 <% current_user.lists.each do |list| %>
-  <div class="list">
-    <div class="list-name" id="list-name">
+  <div class="list" id="list-name"> 
+    <div class="list-name" >
       <%= link_to list.name, list_tasks_path(list)  %>
     </div>
     <div class delete-btn>
