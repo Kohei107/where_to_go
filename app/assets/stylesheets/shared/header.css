@@ -6,7 +6,6 @@
   background-color: #253141;
   width: 100vw;
   height: 90px;
-  
   display: flex;
   flex-direction: column;
 }
@@ -58,4 +57,34 @@
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
   color: #FFF;
+}
+
+
+ /* タブレット表示時 */
+ @media (max-width: 1024px) {
+  .blue-logo{
+    margin-left: 10px;
+  }
+  
+ }
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .top-page-header {
+    height: 60px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+  .blue-logo{
+    width: 130px;
+    height: 60px;
+    margin-left: 10px;
+  }
+  .user-nickname {
+    font-size: 12px;
+  }
+  .logout {
+    font-size: 12px;
+  }
 }

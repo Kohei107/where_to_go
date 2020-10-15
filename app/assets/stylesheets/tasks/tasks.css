@@ -74,6 +74,12 @@
   width: 40vh;
 }
 
+.map{
+  width: 500px;
+  height: 100px;
+  margin-right: 200px;
+}
+
 
 .form {
   background-color: #253141;
@@ -117,4 +123,86 @@
 
 input[type=checkbox] {
   transform: scale(1.5);
+}
+
+ /* タブレット表示時 */
+ @media (max-width: 1024px) {
+  .side-bar{
+    width: 250px;
+  }
+  .list {
+    font-size: 15px;
+  }
+  .main-list {
+    width: calc(100% - 250px);
+  }
+  .map{
+    margin-right: 50px;
+  }
+ }
+
+ /* スマホ表示時 */
+@media (max-width: 599px) {
+  .side-bar{
+    width: 150px;
+    height: calc(100vh - 60px);
+    padding: 0 10px;
+  }
+  .list {
+    font-size: 13px;
+  }
+  .create-list-btn{
+    font-size: 13px;
+    margin: 15px 0 10px;
+  }
+  .main-list {
+    width: calc(100% - 150px);
+  }
+  .tasks {
+    height: calc(100vh - 120px);
+    padding-right: 0px;
+  }
+  .task-content{
+    font-size: 12px;
+    margin: 0 0 20px 20px;
+    width: 30vh;
+  }
+  .form {
+    height: 60px;
+    padding: 15px 25px;
+    
+  }
+  .form-input {
+    width: 300px;
+    font-size: 10px;
+  }
+  .form-task {
+    height: 35px;
+  }
+  .form-submit {
+    font-size: 12px;
+    height: 35px;
+    padding: 0 10px;
+  }
+  .map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+  .map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 90%;
+    }
+
+    .delete-btn {
+      font-size: 13px;
+      margin-right: 10px;
+    }
+    input[type=checkbox] {
+      transform: scale(1.3);
+    }
 }
