@@ -64,3 +64,19 @@ h1 {
   background-image: url("../IMG_0468.JPG");
   background-size: cover;
 }
+
+ /* スマホ表示時 */
+ @media (max-width: 599px) {
+  h1 {
+    margin-left: 50px;
+    font-size: 24px;
+  }
+  .task-list-form{
+    width: 590px;
+    padding: 40px;
+  }
+  .task-list-form__action-btn{
+    padding: 12px 20px;
+    margin-left: 143px;
+  }
+}

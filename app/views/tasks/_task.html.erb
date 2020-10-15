@@ -12,7 +12,7 @@
         src=<%=url_for("https://www.google.com/maps/embed/v1/place?key=#{ENV["GOOGLE_API_KEY"]}&q=#{task.content}&zoom=15")%>>
     </iframe>
   </div>
-      <div class delete-btn>
+      <div class= delete-btn>
         <%= link_to "削除", list_task_path(@list.id, task.id), method: :delete %>
       </div>
   </div>
