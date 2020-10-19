@@ -14,8 +14,7 @@ class TasksController < ApplicationController
       #render json:{ post: @task }
       redirect_to list_tasks_path(@list)
     else
-      @tasks = @list.tasks
-      render :index
+      redirect_to list_tasks_path(@list)
     end
   end
 

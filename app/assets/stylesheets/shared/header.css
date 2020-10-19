@@ -8,6 +8,7 @@
   height: 90px;
   display: flex;
   flex-direction: column;
+  background: rgba(56,56,56, 0.5);
 }
 
 .nav {
@@ -100,8 +101,8 @@
   }
   .blue-logo{
     width: 130px;
-    height: 60px;
-    margin-left: 10px;
+    height: 55px;
+    margin: 10px 0 10 10px 10px;
   }
   .user-nickname {
     font-size: 12px;
