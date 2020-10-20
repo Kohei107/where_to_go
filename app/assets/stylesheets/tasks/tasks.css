@@ -22,6 +22,7 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .list-name a {
@@ -46,7 +47,7 @@
   background: -moz-linear-gradient(#ffb03c, #ff708d);
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
-  
+  list-style: none;
   margin: 20px 0 10px;
   
 }
