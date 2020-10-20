@@ -40,39 +40,72 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* ------------------------リセットCSS */
+// ------------------------------------リセットCSS
 
 
 
 
 
-.registration-main1 {
-  width: 100%;
-  min-width: 800px;
-  height: calc(100% - 250px);
+* {
+  box-sizing: border-box;
+}
+
+.main-container{
+  height: 100vh;
+  background-image: image-url("img_topbg.JPG");
+  background-size: cover;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.title {
+  width: 420px;
+  height:150px;
+}
+
+.main {
+  height: 500px;
   display: flex;
   justify-content: center;
 }
 
-.login-btn {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 50px;
+.word{
+  width: 1000px;
+;
+}
+.footer{
+  height: 100px;
 }
 
-.login-red-btn {
-  width: 100%;
-  border: 1px solid #ffb03c;
-  color: #fff;
-  line-height: 48px;
-  font-size: 14px;
-  cursor: pointer;
+.login_btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
+}
+
+
+.sign-up {
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 3vw;
+  padding: 0.5em 1em;
   background: -moz-linear-gradient(#ffb03c, #ff708d);
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
+  color: #FFF;
 }
 
-.login-flash-message {
-  text-align: center;
-  color: red;
+.login {
+  font-size: 30px;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
+  color: #FFF;
 }
+
