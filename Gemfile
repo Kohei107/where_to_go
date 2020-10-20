@@ -60,3 +60,7 @@ gem 'pry-rails'
 gem 'jquery-rails'
 
 gem 'gon'
+
+group :production do
+  gem 'rails_12factor'
+end
