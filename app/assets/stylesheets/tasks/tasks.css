@@ -36,24 +36,23 @@
 .create-list {
   display: flex;
   justify-content: center;
-  
+  text-decoration: none;
+  color: #FFF;
 }
 
 .create-list-btn{
   font-size: 15px;
-  text-decoration: none;
   padding: 0.5em 1em;
   background: -moz-linear-gradient(#ffb03c, #ff708d);
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
-  color: #FFF;
+  
   margin: 20px 0 10px;
+  
 }
 
 .main-list {
-  background-color: #ffffff;
   width: calc(100% - 200px);
-  background: rgba(255,255,255,0.5);
 }
 
 .tasks {
@@ -76,7 +75,7 @@
   padding: 20px;
   position: relative;
   z-index: 0;
-  background: rgba(235,218,233,0.5);
+  background: rgba(235, 218, 233, 0.5);
 }
 
 .task:before{
@@ -114,34 +113,38 @@
   padding: 20px 40px;
   display: flex;
   justify-content: center;
-  background: rgba(45, 45, 45, 0.5);
+  background: rgba(56, 56, 56, 0.5);
 }
 
 .form-input {
   background-color: white;
   width: 70%;
+  border-radius: 10px;
+  border: solid white 1px;
 }
 
 .form-task {
-  border: none;
+  border: solid white 1px;
   height: 50px;
   width: 100%;
   padding-left: 10px;
+  border-radius: 10px;
 }
 
 .form-submit {
   background-color: #ffffff;
-  border: none;
+  border: solid white 1px;
   color: black;
   font-size: 16px;
   height: 50px;
   margin-left: 15px;
   padding: 0 20px;
+  border-radius: 10px;
 }
 
 .form-submit:hover {
-  background-color: rgb(2, 2, 44);
-  border: none;
+  background: rgba(56, 56, 56, 0.5);
+  border: solid white 1px;
   color: white;
   font-size: 16px;
   height: 50px;
@@ -214,6 +217,11 @@ input[type=checkbox] {
     height: 35px;
   }
   .form-submit {
+    font-size: 12px;
+    height: 35px;
+    padding: 0 10px;
+  }
+  .form-submit:hover {
     font-size: 12px;
     height: 35px;
     padding: 0 10px;

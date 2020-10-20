@@ -9,8 +9,8 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 require("../list")
-require("../check")
-//require("../task")
+//require("../check")
+require("../task")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
