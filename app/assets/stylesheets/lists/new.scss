@@ -1,8 +1,9 @@
-h1 {
+.new-list {
   letter-spacing: 2px;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  font-weight: bold;
 }
 
 .task-list-form{
@@ -10,7 +11,7 @@ h1 {
   margin: 0px auto;
   padding: 40px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-sizing: border-box;
   opacity: 0.8;
   background: rgba(0,0,0, 0)
@@ -48,6 +49,7 @@ h1 {
   line-height: 30px;
   padding: 10px 15px;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .task-list-form__action-btn{
@@ -56,7 +58,8 @@ h1 {
   color:#ffff;
   background-color: #38aef0;
   border: 0;
-  margin-left: 300px;
+  margin-left: 270px;
+  border-radius: 10px;
 }
 
 .background{
