@@ -4,10 +4,10 @@
 <% current_user.lists.each do |list| %>
   <div class="list" id="list-name"> 
     <div class="list-name" >
-      <%= link_to list.name, list_tasks_path(list)  %>
+      <%= link_to list.name, list_tasks_path(list), id:"list_path"  %>
     </div>
-    <div class delete-btn>
-      <%= link_to "削除", list_path(list), method: :delete%>
+    <div class= delete-btn>
+      <%= link_to image_tag("バツアイコン2.png"), list_path(list), method: :delete%>
     </div>
   </div>
 <% end%>

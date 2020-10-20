@@ -1,3 +1,6 @@
+  <div id= "list">
+</div>
+  
   <div class="task">
     <div class="task-content">
     <%= check_box_tag :done %>
@@ -13,6 +16,6 @@
     </iframe>
   </div>
       <div class= delete-btn>
-        <%= link_to "削除", list_task_path(@list.id, task.id), method: :delete %>
+        <%= link_to image_tag("img_x.png"), list_task_path(@list.id, task.id), method: :delete %>
       </div>
   </div>

@@ -1,17 +1,22 @@
+.user_background{
+  height: 100vh;
+  background-image: url("../IMG_0336.JPG");
+  background-size: cover;
+}
+
 .registration-main {
   width: 100%;
   min-width: 800px;
-  height: 100%;
-  background-color: white;
+  height: calc(100% - 140px);
   display: flex;
   justify-content: center;
 }
 
-/* form-wrapは商品購入画面でも使用しています */
+
 .form-wrap {
   width: 50%;
-  background-color: white;
   padding-bottom: 70px;
+  background: rgba(255,255,255,0.8);
 }
 
 .form-header {
@@ -71,10 +76,12 @@
 
 .register-red-btn {
   width: 100%;
-  background: #7eec62;
-  border: 1px solid #7eec62;
+  border: 1px solid #ffb03c;
   color: #fff;
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
+  background: -moz-linear-gradient(#ffb03c, #ff708d);
+  background: -webkit-linear-gradient(#ffb03c, #ff708d);
+  background: linear-gradient(to right, #ffb03c, #ff708d);
 }

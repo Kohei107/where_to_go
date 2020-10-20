@@ -3,9 +3,9 @@
 </div>
 
 
-<%= form_with model: [@list, @task], class: "form", local: true do |f| %>
+<%= form_with model: [@list, @task], class: "form", id: "form", local: true do |f| %>
     <div class="form-input">
-      <%= f.text_field :content, class: "form-task", placeholder: '地図がうまく表示されない時は、地名等も入力してください' %>
+      <%= f.text_field :content, class: "form-task", id: "content", placeholder: '地図がうまく表示されない時は、地名等も入力してください' %>
     </div>
-     <%= f.submit '追加', class: "form-submit" %>
+     <%= f.submit '追加', class: "form-submit", id: "submit" %>
 <% end %>

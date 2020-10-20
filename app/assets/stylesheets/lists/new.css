@@ -61,9 +61,21 @@ h1 {
 
 .background{
   height: 100vh;
-  background-image: url("../IMG_0468.JPG");
+  background-image: url("../IMG_0381.JPG");
   background-size: cover;
 }
+
+.logo_new{
+  display: flex;
+  justify-content: center;
+}
+.title_new{
+  width: 60%;
+  height: 23vh;
+
+}
+
+
 
  /* スマホ表示時 */
  @media (max-width: 599px) {
@@ -72,11 +84,11 @@ h1 {
     font-size: 24px;
   }
   .task-list-form{
-    width: 590px;
+    width: 100%;
     padding: 40px;
   }
   .task-list-form__action-btn{
     padding: 12px 20px;
-    margin-left: 143px;
+    margin-left: 110px;
   }
 }
