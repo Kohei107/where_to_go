@@ -1,15 +1,13 @@
 class TasksController < ApplicationController
   before_action :move_to_top 
+  before_action :set_list, only: [:index, :create]
 
   def index
     @task = Task.new
-    @list = List.find(params[:list_id])
     @tasks = @list.tasks
-    
   end
 
   def create
-    @list = List.find(params[:list_id])
     @task = @list.tasks.new(task_params)
     #gon.list = @list
     if @task.save
@@ -21,9 +19,7 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    
     list = List.find(params[:list_id])
-    
     task = Task.find(params[:id])
     task.destroy
     redirect_to list_tasks_path(list.id)
@@ -31,6 +27,10 @@ class TasksController < ApplicationController
 
   def move_to_top
     redirect_to tops_path unless user_signed_in?
+  end
+
+  def set_list
+    @list = List.find(params[:list_id])
   end
 
   private
