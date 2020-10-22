@@ -12,5 +12,11 @@
         <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
         <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
     </ul>
+    
+    <div class= "guest">
+    <%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post, class: "guest_in" %>
+  </div>
   </footer>
+
+  
 </div>

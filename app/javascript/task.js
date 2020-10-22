@@ -1,10 +1,10 @@
 // function task() {
 //   const submit = document.getElementById("submit")
-//   console.log(submit)
+  
 //    submit.addEventListener("click", (e) => {
 //     const formData = new FormData(document.getElementById("form"));
 //     const XHR = new XMLHttpRequest();
-//     XHR.open("POST", `/lists/:${gon.list}/tasks${(gon.list)}????????` , true)
+//     XHR.open("POST", `/lists/:${gon.list}/tasks${(gon.list)}` , true)
 //     XHR.responseType = "json";
 //     XHR.send(formData);
 //     XHR.onload = () => {
@@ -13,7 +13,7 @@
 //         return null;
 //       }
 //       const item = XHR.response.post;
-//       const list = document.getElementById("list??????");
+//       const list = document.getElementById("list");
 //       const formText = document.getElementById("content");
 //       const HTML = `
 //  <div class="task">
