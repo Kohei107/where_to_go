@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  before_action :move_to_top 
+
   def index
     @task = Task.new
     @list = List.find(params[:list_id])
@@ -25,6 +27,10 @@ class TasksController < ApplicationController
     task = Task.find(params[:id])
     task.destroy
     redirect_to list_tasks_path(list.id)
+  end
+
+  def move_to_top
+    redirect_to tops_path unless user_signed_in?
   end
 
   private
