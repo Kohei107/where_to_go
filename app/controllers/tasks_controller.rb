@@ -5,13 +5,16 @@ class TasksController < ApplicationController
   def index
     @task = Task.new
     @tasks = @list.tasks
+    #gon.my_private_key = ENV["GOOGLE_API_KEY"]
   end
 
   def create
+   
     @task = @list.tasks.new(task_params)
-    #gon.list = @list
     if @task.save
-      #render json:{ post: @task }
+      #task_id = @task.id
+      #content = Task.find(task_id)
+      #render json:{ task: content[:content, :id]}
       redirect_to list_tasks_path(@list)
     else
       redirect_to list_tasks_path(@list)

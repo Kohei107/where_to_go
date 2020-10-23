@@ -2,7 +2,7 @@
 
 <div class="lists" >
 <% current_user.lists.each do |list| %>
-  <div class="list" id="list-name"> 
+  <div class="list" data-id= <%=list.id%> id="list-name"> 
     <div class="list-name" >
       <%= link_to list.name, list_tasks_path(list), id:"list_path"  %>
     </div>
