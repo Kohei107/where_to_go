@@ -48,7 +48,7 @@ table {
 
 .registration-main1 {
   width: 100%;
-  min-width: 800px;
+  min-width: 400px;
   height: calc(100% - 250px);
   display: flex;
   justify-content: center;

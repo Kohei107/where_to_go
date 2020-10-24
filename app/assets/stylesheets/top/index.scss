@@ -62,8 +62,8 @@ table {
   align-items: flex-end;
 }
 .title {
-  width: 420px;
-  height:150px;
+  width: 50vmin;
+  height:18vmin;
 }
 
 .main {
@@ -73,7 +73,7 @@ table {
 }
 
 .word{
-  width: 1000px;
+  width: 80%;
 ;
 }
 .footer{
@@ -85,11 +85,12 @@ table {
   justify-content: center;
   align-items: flex-end;
   list-style: none;
+  cursor: pointer;
 }
 
 
 .sign-up {
-  font-size: 30px;
+  font-size: 1.5em;
   text-decoration: none;
   margin-right: 3vw;
   padding: 0.5em 1em;
@@ -100,7 +101,7 @@ table {
 }
 
 .login {
-  font-size: 30px;
+  font-size: 1.5em;
   text-decoration: none;
   padding: 0.5em 1em;
   background: -moz-linear-gradient(#ffb03c, #ff708d);

@@ -50,8 +50,9 @@ table {
 
 .side-bar{
   background-color: #253141;
-  width: 300px;
-  padding: 0 20px;
+  width: 18.7em;
+  height: calc(100vh - 5.61em);
+  padding: 0 1.22em;
   overflow: scroll;
   background: rgba(56, 56, 56, 0.5);
 }
@@ -61,8 +62,8 @@ table {
   margin: 2em 0;
   color: #5d627b;
   background: white;
-  border-top: solid 5px #5d627b;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  border-top: solid 0.32em #5d627b;
+  box-shadow: 0 0.2em 0.32em rgba(0, 0, 0, 0.22);
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -85,13 +86,13 @@ table {
 }
 
 .create-list-btn{
-  font-size: 15px;
+  font-size: 0.93em;
   padding: 0.5em 1em;
   background: -moz-linear-gradient(#ffb03c, #ff708d);
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
   list-style: none;
-  margin: 20px 0 10px;
+  margin: 1.22em 0 0.63em;
   
 }
 
@@ -101,22 +102,22 @@ table {
 
 .tasks {
   background-color: #ffffff;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 11.22em);
   overflow: scroll;
-  padding: 0 20px;
+  padding: 0 1.22em;
   background: rgba(255,255,255,0.5);
 
 }
 
 .task{
-  margin: 10px 0;
-  margin-top: 10px;
+  margin: 0.63em 0;
+  margin-top: 0.63em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(233, 229, 229);
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 0.32em;
+  padding: 1.22em;
   position: relative;
   z-index: 0;
   background: rgba(235, 218, 233, 0.5);
@@ -124,7 +125,7 @@ table {
 
 .task:before{
 	border: 1px solid #fff; 
-	border-radius: 5px;
+	border-radius: 0.32em;
 	content: '';
 	display: block;
 	position: absolute;
@@ -132,29 +133,29 @@ table {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	margin: 4px;
+	margin: 0.23em;
 	z-index: -1;
 }
 
 
 .task-content{
-  font-size: 18px;
+  font-size: 1.12em;
   color: #434a54;
-  margin: 0 0 10px 20px;
+  margin: 0 0 0.63em 1.22em;
   width: 40vh;
 }
 
 .map{
-  width: 500px;
-  height: 100px;
-  margin-right: 200px;
+  width: 31.5em;
+  height: 6.3em;
+  margin-right: 12.2em;
 }
 
 
 .form {
   background-color: #253141;
-  height: 90px;
-  padding: 20px 40px;
+  height: 5.61em;
+  padding: 1.22em 2.44em;
   display: flex;
   justify-content: center;
   background: rgba(56, 56, 56, 0.5);
@@ -163,37 +164,37 @@ table {
 .form-input {
   background-color: white;
   width: 70%;
-  border-radius: 10px;
+  border-radius: 0.63em;
   border: solid white 1px;
 }
 
 .form-task {
   border: solid white 1px;
-  height: 50px;
+  height: 3.15em;
   width: 100%;
-  padding-left: 10px;
-  border-radius: 10px;
+  padding-left: 0.63em;
+  border-radius: 0.63em;
 }
 
 .form-submit {
   background-color: #ffffff;
   border: solid white 1px;
   color: black;
-  font-size: 16px;
-  height: 50px;
-  margin-left: 15px;
-  padding: 0 20px;
-  border-radius: 10px;
+  font-size: 1em;
+  height: 3.15em;
+  margin-left: 0.93em;
+  padding: 0 1.22em;
+  border-radius: 0.63em;
 }
 
 .form-submit:hover {
   background: rgba(56, 56, 56, 0.5);
   border: solid white 1px;
   color: white;
-  font-size: 16px;
-  height: 50px;
-  margin-left: 15px;
-  padding: 0 20px;
+  font-size: 1em;
+  height: 3.15em;
+  margin-left: 0.93em;
+  padding: 0 1.22em;
 }
 
 input[type=checkbox] {
@@ -206,89 +207,91 @@ input[type=checkbox] {
   background-size: cover;
 }
 
- /* タブレット表示時 */
- @media (max-width: 1024px) {
-  .side-bar{
-    width: 250px;
-  }
-  .list {
-    font-size: 15px;
-  }
-  .main-list {
-    width: calc(100% - 250px);
-  }
-  .map{
-    margin-right: 50px;
-  }
- }
 
- /* スマホ表示時 */
-@media (max-width: 599px) {
-  .side-bar{
-    width: 150px;
-    height: calc(100vh - 60px);
-    padding: 0 10px;
-  }
-  .list {
-    font-size: 13px;
-  }
-  .create-list-btn{
-    font-size: 13px;
-    margin: 15px 0 10px;
-  }
-  .main-list {
-    width: calc(100% - 150px);
-  }
-  .tasks {
-    height: calc(100vh - 120px);
-    padding-right: 0px;
-  }
-  .task-content{
-    font-size: 12px;
-    margin: 0 0 20px 20px;
-    width: 30vh;
-  }
-  .form {
-    height: 60px;
-    padding: 15px 25px;
+//  /* タブレット表示時 */
+//  @media (max-width: 1024px) {
+//   .side-bar{
+//     width: 250px;
+//   }
+//   .list {
+//     font-size: 15px;
     
-  }
-  .form-input {
-    width: 300px;
-    font-size: 10px;
-  }
-  .form-task {
-    height: 35px;
-  }
-  .form-submit {
-    font-size: 12px;
-    height: 35px;
-    padding: 0 10px;
-  }
-  .form-submit:hover {
-    font-size: 12px;
-    height: 35px;
-    padding: 0 10px;
-  }
-  .map{
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-  }
-  .map iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 90%;
-    width: 90%;
-    }
+//   }
+//   .main-list {
+//     width: calc(100% - 250px);
+//   }
+//   .map{
+//     margin-right: 50px;
+//   }
+//  }
 
-    .delete-btn {
-      font-size: 13px;
-      margin-right: 10px;
-    }
-    input[type=checkbox] {
-      transform: scale(1.3);
-    }
-}
+//  /* スマホ表示時 */
+// @media (max-width: 599px) {
+//   .side-bar{
+//     width: 150px;
+//     height: calc(100vh - 60px);
+//     padding: 0 10px;
+//   }
+//   .list {
+//     font-size: 13px;
+//   }
+//   .create-list-btn{
+//     font-size: 13px;
+//     margin: 15px 0 10px;
+//   }
+//   .main-list {
+//     width: calc(100% - 150px);
+//   }
+//   .tasks {
+//     height: calc(100vh - 120px);
+//     padding-right: 0px;
+//   }
+//   .task-content{
+//     font-size: 12px;
+//     margin: 0 0 20px 20px;
+//     width: 30vh;
+//   }
+//   .form {
+//     height: 60px;
+//     padding: 15px 25px;
+    
+//   }
+//   .form-input {
+//     width: 300px;
+//     font-size: 10px;
+//   }
+//   .form-task {
+//     height: 35px;
+//   }
+//   .form-submit {
+//     font-size: 12px;
+//     height: 35px;
+//     padding: 0 10px;
+//   }
+//   .form-submit:hover {
+//     font-size: 12px;
+//     height: 35px;
+//     padding: 0 10px;
+//   }
+//   .map{
+//     height: 0;
+//     overflow: hidden;
+//     padding-bottom: 56.25%;
+//     position: relative;
+//   }
+//   .map iframe {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     height: 90%;
+//     width: 90%;
+//     }
+
+//     .delete-btn {
+//       font-size: 13px;
+//       margin-right: 10px;
+//     }
+//     input[type=checkbox] {
+//       transform: scale(1.3);
+//     }
+// }
