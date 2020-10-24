@@ -108,7 +108,7 @@ VSCode
 
 ## tasks テーブル
 
-| Column         | Type       | Options ---------------------- |
+| Column         | Type       | Options                        |
 | -------------- | ---------- | ------------------------------ |
 | task           | string     | null: false                    |
 | list           | references | null: false, foreign_key: true |
