@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: where_to_go_production
-  username: where_to_go
-  password: <%= ENV['WHERE_TO_GO_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
