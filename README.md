@@ -10,7 +10,7 @@ WHERE TO GO
 
 # 本番環境
 
-https://where-to-go-29746.herokuapp.com/
+http://54.248.178.225/
 
 ゲストログインからお入りください。
 
@@ -68,9 +68,13 @@ MySQL
 ## API
 Google Maps Embed API
 
+## インフラ
+
+AWS(EC2)、Capistrano
+
 ## Webサーバー(本番環境)
 
-heroku
+Nginx
 
 ## ソース管理
 
