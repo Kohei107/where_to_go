@@ -10,7 +10,7 @@ WHERE TO GO
 
 # 本番環境
 
-https://where-to-go-29746.herokuapp.com/
+http://54.248.178.225/
 
 ゲストログインからお入りください。
 
@@ -48,7 +48,7 @@ https://where-to-go-29746.herokuapp.com/
 
 # 工夫したポイント
 - 旅行したくなるようなviewにしました。
-- 使いやすいように、シンプルな作りにしました。
+- 使用していてストレスがかからないように、感覚的に使えるシンプルな作りにしました。
 - Google Maps Embed APIを使って、入力した目的地の地図情報を自動で表示できるようにしました。
 
 # 使用技術(環境開発)
@@ -68,9 +68,13 @@ MySQL
 ## API
 Google Maps Embed API
 
+## インフラ
+
+AWS(EC2)、Capistrano
+
 ## Webサーバー(本番環境)
 
-heroku
+Nginx
 
 ## ソース管理
 
