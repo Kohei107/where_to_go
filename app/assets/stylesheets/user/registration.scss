@@ -129,3 +129,31 @@ table {
   background: -webkit-linear-gradient(#ffb03c, #ff708d);
   background: linear-gradient(to right, #ffb03c, #ff708d);
 }
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .form-group {
+    padding-top: 10px;
+  }
+  .input-default {
+    font-size: 10px;
+    height: 38px;
+  }
+  .form-text {
+    font-size: 12px;
+  }
+  .indispensable{
+    font-size: 12px;
+  }
+  .form-group{
+    margin-top: 15px;
+  }
+  .register-red-btn {
+    line-height: 35px;
+    font-size: 14px;
+  }
+  .form-wrap{
+    padding-bottom: 0px;
+    width: 60%;
+  }
+}

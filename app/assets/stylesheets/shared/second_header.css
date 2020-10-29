@@ -58,3 +58,11 @@ table {
   width: 280px;
   height:100px;
 }
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .second-logo{
+	width: 200px;
+	height: 70px;
+  }
+}

@@ -157,4 +157,7 @@ table {
   .logout {
     font-size: 12px;
   }
+  .list_center{
+    display: none;
+  }
 }

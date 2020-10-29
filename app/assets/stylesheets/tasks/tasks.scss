@@ -228,7 +228,7 @@ input[type=checkbox] {
  /* スマホ表示時 */
 @media (max-width: 599px) {
   .side-bar{
-    width: 150px;
+    width: 140px;
     height: calc(100vh - 60px);
     padding: 0 10px;
   }
@@ -278,6 +278,7 @@ input[type=checkbox] {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
+    margin-right: 10px;
   }
   .map iframe {
     position: absolute;
